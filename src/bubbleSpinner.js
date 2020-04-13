@@ -1,8 +1,9 @@
 /*
- * @author Ghiya Mikadze <ghiya.mikadze@gmail.com>
+ * bubbleSpinner.js
+ * @version 1.0.0
+ * @author Ghiya Mikadze <g.mikadze@lakka.io>
+ * @license Licensed under the MIT license
  */
-
-
 +(function ($) {
     'use strict';
 
@@ -263,7 +264,6 @@
     };
 
     bubbleSpinner.prototype.renderBubbles = function (options) {
-        //console.log('renderBubbles');
         this.getGridWrapper().html("");
         for (var index = 0; index < 4; index++) {
             this.getGridWrapper()
@@ -283,7 +283,6 @@
     };
 
     bubbleSpinner.prototype.commitAnimation = function ($bubble, index, durations) {
-        //console.log('commitAnimation with index ' + index);
         var context = this;
         var style = typeof context.options.style === "object" ?
             context.options.style.length > index ?
@@ -298,7 +297,6 @@
             $bubble,
             {
                 flow: function () {
-                    //console.log('flow bubble');
                     if (!context.isAnimating) {
                         return;
                     }

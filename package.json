@@ -1,5 +1,5 @@
 {
-  "name": "bubble-spinner",
+  "name": "jskit-bubble-spinner",
   "version": "1.0.0",
   "description": "A simple and customizable loading indicator.",
   "scripts": {
